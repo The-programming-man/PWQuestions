@@ -1,0 +1,14 @@
+s=str(input())
+s_len=len(s)
+count=0
+value=0
+for i in s:
+    for j in range(i,s_len):
+        if(s[i]==s[j]):
+            count+=1           
+    if(count==0):
+        value=s[i]
+        break
+    else:
+        value=-1
+print(value)
